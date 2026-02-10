@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIMTECH College Tumkur | Best BCA BBA MBA College</title>
+    <meta name="description" content="VIMTECH College Tumkur is one of the best BCA, BBA and MBA colleges in Tumkur, Karnataka. Approved institution offering quality education, industry exposure, modern infrastructure and placements.">
+    <link rel="icon" href="images-2/logo.jpg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- TOP BAR WITH MARQUEE -->
+    <div class="top-bar">
+        <div class="marquee">
+            <div class="marquee-content">
+                <a href="mailto:vaisirifirstgradecollege@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    vaisirifirstgradecollege@gmail.com
+                </a>
+                <a href="tel:+918217230766">
+                    <i class="fa-solid fa-phone"></i>
+                    +91 82172 30766
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    Admissions Open 2025
+                </a>
+            </div>
+        </div>
+        <div class="top-actions">
+            <button class="mega-btn iqac-btn" onclick="togglePanel('iqacDrop')">
+                <i class="fa-solid fa-award"></i>
+                IQAC
+                <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </button>
+            <button class="mega-btn disclosure-btn" onclick="togglePanel('discDrop')">
+                <i class="fa-solid fa-file-shield"></i>
+                DISCLOSURE
+                <i class="fa-solid fa-chevron-down drop-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- IQAC DROPDOWN -->
+    <div id="iqacDrop" class="dropdown-panel">
+        <a href="#"><i class="fa-solid fa-bullseye"></i> Objective of IQAC</a>
+        <a href="#"><i class="fa-solid fa-users"></i> IQAC Composition</a>
+        <a href="#"><i class="fa-solid fa-sitemap"></i> IQAC Sub-Committee</a>
+        <a href="#"><i class="fa-solid fa-file-lines"></i> Minutes of Meeting</a>
+        <a href="#"><i class="fa-solid fa-user-tie"></i> Coordinator Details</a>
+    </div>
+
+    <!-- DISCLOSURE DROPDOWN -->
+    <div id="discDrop" class="dropdown-panel">
+        <a href="#"><i class="fa-solid fa-building-columns"></i> Institution Info</a>
+        <a href="#"><i class="fa-solid fa-scale-balanced"></i> Approvals</a>
+        <a href="#"><i class="fa-solid fa-people-group"></i> Governing Council</a>
+        <a href="#"><i class="fa-solid fa-graduation-cap"></i> Courses Offered</a>
+        <a href="#"><i class="fa-solid fa-file-pdf"></i> AICTE Disclosure</a>
+    </div>
+
+    <!-- MAIN HEADER -->
+<header class="header">
+  <div class="header-inner header-center">
+
+    <img src="images-2/logo.jpg" alt="College Logo" class="college-logo">
+
+    <div class="college-text">
+      <div class="group-name">
+        VIDYAVAHINI GROUP OF INSTITUTIONS
+      </div>
+
+      <h1 class="college-name">
+        VAISIRI INSTITUTE
+        <span>OF MANAGEMENT & TECHNOLOGY</span>
+      </h1>
+
+      <p class="meta">
+        Sri Sharadadevi Nagar, Tumkur – 572103 |
+        Affiliated to Tumkur University
+      </p>
+    </div>
+
+    <img src="images-2/aicte.jpg" alt="AICTE" class="aicte-logo">
+
+  </div>
+</header>
+
+
+</body>
+</html>
+
+
+<!-- NAVBAR CODE -->
+
+    <nav class="premium-navbar">
+        <div class="nav-toggle" onclick="toggleMobileMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link"><i class="fa fa-home"></i> HOME</a></li>
+            <li class="dropdown">
+                <a href="pages/about.html" class="nav-link dropdown-toggle" onclick="toggleDropdown('aboutMenu')">
+                    ABOUT US <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" id="aboutMenu">
+                    <li><a href="#about">About Institution</a></li>
+                    <li><a href="#leadership">Vision & Mission</a></li>
+                    <li><a href="#about">Founder Message</a></li>
+                    <li><a href="#about">Secretary Message</a></li>
+                    <li><a href="#about">Student welfare</a></li>
+                    <li><a href="#about">Academics</a></li>
+                    <li><a href="#about">Governing Council</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown('deptMenu')">
+                    DEPARTMENTS <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" id="deptMenu">
+                    <li class="sub-dropdown">
+                        <a href="#courses" onclick="toggleSubmenu('ugMenu')">
+                            UG <i class="fa fa-angle-right"></i>
+                        </a>
+                        <ul class="sub-menu" id="ugMenu">
+                            <li><a href="#courses">BCA</a></li>
+                            <li><a href="#courses">BBA</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                        <a href="#courses" onclick="toggleSubmenu('pgMenu')">
+                            PG <i class="fa fa-angle-right"></i>
+                        </a>
+                        <ul class="sub-menu" id="pgMenu">
+                            <li><a href="#courses">MBA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#departments">LANGUAGES</a></li>
+                    <li><a href="#departments">SPORTS</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#student" class="nav-link dropdown-toggle" onclick="toggleDropdown('studentMenu')">
+                    STUDENT CORNER <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" id="studentMenu">
+                    <li><a href="#student">NSS</a></li>
+                    <li><a href="#student">Calendar Of Events</a></li>
+                    <li><a href="#student">Counselling Cells</a></li>
+                    <li><a href="#student">Sports</a></li>
+                    <li class="sub-dropdown">
+                        <a href="#student" onclick="toggleSubmenu('vInfinityMenu')">
+                            V Infinity <i class="fa fa-angle-right"></i>
+                        </a>
+                        <ul class="sub-menu" id="vInfinityMenu">
+                            <li><a href="#student">About V Infinity</a></li>
+                            <li><a href="#student">Activities</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                        <a href="#student" onclick="toggleSubmenu('formsMenu')">
+                            Student Forms <i class="fa fa-angle-right"></i>
+                        </a>
+                        <ul class="sub-menu" id="formsMenu">
+                            <li><a href="#student">V TECHNOCRAFTS</a></li>
+                            <li><a href="#student">V NEXORA</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#industry" class="nav-link">INDUSTRY LINKAGE</a></li>
+            <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- IMAGE SLIDER -->
+    <section class="slider" id="home">
+        <div class="slide-container">
+            <div class="slide active">
+                <img src="images/slide2.jpg" alt="VIMTECH Campus">
+                <div class="slide-content">
+                    <h1>Welcome to VIMTECH</h1>
+                    <p>Excellence in Education Since 2024</p>
+                    <a href="#about" class="slide-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Modern Infrastructure">
+                <div class="slide-content">
+                    <h1>Modern Infrastructure</h1>
+                    <p>State-of-the-art facilities for holistic learning</p>
+                    <a href="#infrastructure" class="slide-btn">Explore Campus</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Industry Integration">
+                <div class="slide-content">
+                    <h1>Industry Integration</h1>
+                    <p>Bridging academia and industry for career success</p>
+                    <a href="#industry" class="slide-btn">Know More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/campus.jpg" alt="Join VIMTECH">
+                <div class="slide-content">
+                    <h1>Join VIMTECH Family</h1>
+                    <p>Admissions Open 2026 - Shape Your Future</p>
+                    <a href="#contact" class="slide-btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/20250815_090113.jpg" alt="Expert Faculty">
+                <div class="slide-content">
+                    <h1>Expert Faculty</h1>
+                    <p>Learn from industry experts and experienced academicians</p>
+                    <a href="#leadership" class="slide-btn">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section" id="welcome">
+        <div class="welcome-container">
+            <div class="welcome-content">
+                <span class="welcome-tag">WELCOME TO</span>
+                <h1>
+                    <span class="highlight">VIMTECH</span><br>
+                    Vaisiri Institute of Management<br>
+                    & Technology
+                </h1>
+                <p>
+                    Vaisiri Institute of Management & Technology (VIMTECH) is committed to
+                    academic excellence, industry-ready education, and ethical leadership.
+                    We nurture professionals prepared for global challenges.
+                </p>
+                <ul class="welcome-features">
+                    <li>Affiliated to Tumkur University</li>
+                    <li>Recognized by Government of Karnataka</li>
+                    <li>Outcome-based & skill-oriented curriculum</li>
+                    <li>Modern infrastructure with smart classrooms</li>
+                    <li>Strong placement support and industry connections</li>
+                </ul>
+                <div class="welcome-buttons">
+                    <a href="#about" class="welcome-btn primary">Explore VIMTECH</a>
+                    <a href="#courses" class="welcome-btn secondary">View Courses</a>
+                </div>
+            </div>
+            <div class="welcome-image">
+                <img src="images/campus.jpg" alt="VIMTECH Campus">
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCREDITATION SECTION -->
+    <section class="accreditation-section" id="accreditation">
+        <div class="accreditation-container">
+            <div class="accreditation-box">
+                <img src="images/tumkur-university.png"Tumkur University">
+                <p>Affiliated to Tumkur University</p>
+            </div>
+            <div class="accreditation-box">
+                <img src="images-2/aicte.jpg" alt="AICTE">
+                <p>Approved by AICTE</p>
+            </div>
+            <div class="accreditation-box">
+                <img src="images/govt-karnataka.png" alt="Government of Karnataka">
+                <p>Recognized by Government of Karnataka</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE VIMTECH -->
+    <section class="why-vimtech" id="why-choose">
+        <h2>Why Choose <span>VIMTECH</span> College?</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon pulse-blue">
+                    <i class="fa-solid fa-industry"></i>
+                </div>
+                <h3>Industry-Focused Curriculum</h3>
+                <p>Programs aligned with current industry needs and skill demands.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon pulse-gold">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <h3>Experienced Faculty</h3>
+                <p>Highly qualified faculty with academic and industry expertise.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon pulse-blue">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <h3>Modern Infrastructure</h3>
+                <p>Smart classrooms, labs, and a tech-enabled campus.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon pulse-gold">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3>Strong Placement Support</h3>
+                <p>Career guidance, internships, and placement training.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon pulse-blue">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Skill & Career Development</h3>
+                <p>Workshops, certifications, and industry exposure.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon pulse-gold">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h3>Student-Centric Learning</h3>
+                <p>Holistic development through academics and activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSIONS SECTION -->
+    <section class="admissions-section" id="admissions">
+        <div class="admissions-container">
+            <div class="admissions-content">
+                <span class="small-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Vaisiri Institute of Management & Technology
+                </span>
+                <h1>Admissions Open For 2026</h1>
+                <p>
+                    VIMTECH offers industry-focused Undergraduate and Postgraduate
+                    programmes designed to create skilled, ethical, and
+                    career-ready professionals.
+                </p>
+                <div class="admission-links">
+                    <a href="#courses" class="pill">Undergraduate</a>
+                    <a href="#courses" class="pill">Postgraduate</a>
+                </div>
+                <button class="explore-btn" onclick="scrollToSection('courses')">
+                    Explore More →
+                </button>
+            </div>
+            <div class="image-collage">
+                <div class="img-card img1">
+                    <img src="images/a3.jpeg" alt="Campus Life">
+                </div>
+                <div class="img-card img2">
+                    <img src="images/a2.jpeg" alt="Students">
+                </div>
+                <div class="img-card img3">
+                    <img src="images/a1.jpeg" alt="Library">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses-section" id="courses">
+        <div class="courses-header">
+            <h1>Our Academic Programmes</h1>
+            <span class="heading-underline"></span>
+        </div>
+
+        <h2 class="course-title">Undergraduate Programmes (UG)</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h3>BCA</h3>
+                <p>Bachelor of Computer Applications</p>
+                <ul>
+                    <li>Programming & Software Development</li>
+                    <li>Database & Web Technologies</li>
+                    <li>Industry-oriented curriculum</li>
+                    <li>Career-focused training</li>
+                </ul>
+                <a href="#contact" class="course-btn">Apply Now</a>
+            </div>
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>BCA (AI & ML)</h3>
+                <p>Artificial Intelligence & Machine Learning</p>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Machine Learning Algorithms</li>
+                    <li>Data Science & Python</li>
+                    <li>Industry Projects</li>
+                </ul>
+                <a href="#contact" class="course-btn">Apply Now</a>
+            </div>
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3>BBA</h3>
+                <p>Bachelor of Business Administration</p>
+                <ul>
+                    <li>Management & Leadership</li>
+                    <li>Finance, HR & Marketing</li>
+                    <li>Entrepreneurial Skills</li>
+                    <li>Industry Exposure</li>
+                </ul>
+                <a href="#contact" class="course-btn">Apply Now</a>
+            </div>
+        </div>
+
+        <h2 class="course-title pg">Postgraduate Programme (PG)</h2>
+        <div class="course-grid center-single">
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3>MBA</h3>
+                <p>Master of Business Administration</p>
+                <ul>
+                    <li>Strategic Management</li>
+                    <li>Finance, Marketing & HR</li>
+                    <li>Industry Internships</li>
+                    <li>Leadership Development</li>
+                </ul>
+                <a href="#contact" class="course-btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+<!-- RECRUITERS -->
+<section class="recruiters-section">
+
+  <div class="recruiters-header">
+    <h2>Key Recruiters</h2>
+    <span class="underline"></span>
+    <p>Our students are placed in leading national and global organizations</p>
+  </div>
+
+  <div class="recruiters-grid">
+    <img src="images/recruiters/TCS.png" alt="TCS">
+    <img src="images/recruiters/infosys.png" alt="Infosys">
+    <img src="images/recruiters/IBM.png" alt="IBM">
+    <img src="images/recruiters/morgan.png" alt="Morgan Stanley">
+
+    
+    <img src="images/recruiters/novo.png" alt="Novo Nordisk">
+    <img src="images/recruiters/wipro.png" alt="Wipro">
+    <img src="images/recruiters/cafe.png" alt="Cafe Coffee Day">
+    <img src="images/recruiters/vee.png" alt="Vee Technologies">
+
+    <img src="images/recruiters/24.png" alt="24/7.ai">
+    <img src="images/recruiters/Maruti.png" alt="Maruti Suzuki">
+    <img src="images/recruiters/accenture.png" alt="Accenture">
+    <img src="images/recruiters/cognizant.png" alt="Cognizant">
+
+    <img src="images/recruiters/mindtree.png" alt="Mindtree">
+    <img src="images/recruiters/hgs.png" alt="HGS">
+    <img src="images/recruiters/first source.png" alt="Firstsource">
+    <img src="images/recruiters/capgemini.png" alt="Capgemini">
+  </div>
+
+</section>
+
+    <!-- STUDENT FORUMS -->
+    <section class="student-forums" id="student">
+        <h2 class="forum-title">Student Forums & Communities</h2>
+        <div class="forum-grid">
+            <div class="forum-card tech">
+                <img src="images-2/logo.jpg" alt="V Technocrafts" class="forum-logo">
+                <span class="forum-tag">BCA</span>
+                <h3>V Technocrafts</h3>
+                <p>
+                    A student-led technical forum focused on programming,
+                    innovation, problem-solving, and emerging technologies.
+                </p>
+                <a href="#student" class="forum-btn">Read More</a>
+            </div>
+            <div class="forum-card business">
+                <img src="images-2/logo.jpg" alt="V Nexora" class="forum-logo">
+                <span class="forum-tag">BBA</span>
+                <h3>V Nexora</h3>
+                <p>
+                    A business and management forum nurturing leadership,
+                    entrepreneurship, strategic thinking, and professionalism.
+                </p>
+                <a href="#student" class="forum-btn">Read More</a>
+            </div>
+            <div class="forum-card culture">
+                <img src="images-2/logo.jpg" alt="Kannada Forum" class="forum-logo">
+                <span class="forum-tag">CULTURAL</span>
+                <h3>Kannada Forum</h3>
+                <p>
+                    Promotes language, culture, heritage, and artistic expression
+                    through literary and cultural initiatives.
+                </p>
+                <a href="#student" class="forum-btn">Read More</a>
+            </div>
+            <div class="forum-card sports">
+                <img src="images-2/logo.jpg" alt="V The Champs" class="forum-logo">
+                <span class="forum-tag">SPORTS</span>
+                <h3>V The Champs</h3>
+                <p>
+                    Encourages physical fitness, teamwork, discipline, and
+                    competitive excellence across multiple sports activities.
+                </p>
+                <a href="#student" class="forum-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP SECTION -->
+<section class="leadership-section">
+
+  <h2 class="leadership-title">Leadership Messages</h2>
+
+  <div class="leadership-wrapper">
+
+    <!-- FOUNDER -->
+    <div class="leader-block">
+
+      <div class="leader-header">
+        <div class="leader-img">
+          <img src="images/founder.jpg" alt="Sri K. B. Jayanna">
+        </div>
+
+        <div class="leader-head-text">
+          <h3>Founder’s Message</h3>
+          <span>Sri K. B. Jayanna</span>
+        </div>
+      </div>
+
+      <blockquote>
+        “Education is the foundation upon which innovation, character, and leadership are built.”
+      </blockquote>
+
+      <p>
+        I extend my warm greetings to the students, faculty members, and well-wishers of
+        <strong>Vaisiri Institute of Management and Technology – Vidyavahini Group</strong>,
+        Tumkur, Karnataka. The institute was established with a clear vision to foster innovation,
+        nurture talent, and bridge academic learning with real-world application.
+      </p>
+
+      <p>
+        Our objective is to promote academic excellence while instilling ethical values,
+        leadership qualities, creativity, and social responsibility among students.
+      </p>
+
+      <div class="leader-sign">
+        Founder & President<br>
+        <span>Vidyavahini Group</span>
+      </div>
+
+    </div>
+
+    <!-- SECRETARY -->
+    <div class="leader-block">
+
+      <div class="leader-header">
+        <div class="leader-img">
+          <img src="images/secretary.jpg" alt="Sri N. B. Pradeep Kumar">
+        </div>
+
+        <div class="leader-head-text">
+          <h3>Secretary’s Message</h3>
+          <span>Sri N. B. Pradeep Kumar</span>
+        </div>
+      </div>
+
+      <blockquote>
+        “Education is the manifestation of the perfection already in man.”
+        — Swami Vivekananda
+      </blockquote>
+
+      <p>
+        At <strong>Vaisiri Institute of Management and Technology – Vidyavahini Group</strong>,
+        we are committed to shaping skilled, responsible, and industry-ready professionals
+        through academic excellence and ethical values.
+      </p>
+
+      <p>
+        We assure our continued commitment to high standards in education, infrastructure,
+        mentorship, and holistic student development.
+      </p>
+
+      <div class="leader-sign">
+        Secretary<br>
+        <span>Vidyavahini Group</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- INFRASTRUCTURE SECTION -->
+    <section class="infrastructure-section" id="infrastructure">
+        <h2 class="section-title">Infrastructure</h2>
+        <div class="infra-slider">
+            <div class="infra-track">
+                <div class="infra-card">
+                    <img src="images/campus.jpg" alt="College Building">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-building"></i>
+                        <span>College Building</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="images-2/class.png" alt="Smart Classrooms">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span>Smart Classrooms</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="images-2/lab.jpg" alt="Computer Labs">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Computer Labs</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="images-2/seminar.jpg" alt="Seminar Hall">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <span>Seminar Hall</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="images-2/lab.jpg" alt="Digital Library">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Digital Library</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="https://picsum.photos/seed/canteen/320/220.jpg" alt="Canteen">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Canteen</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="https://picsum.photos/seed/medical/320/220.jpg" alt="Medical Room">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-kit-medical"></i>
+                        <span>Medical Room</span>
+                    </div>
+                </div>
+                <div class="infra-card">
+                    <img src="https://picsum.photos/seed/transport/320/220.jpg" alt="Bus Facilities">
+                    <div class="infra-overlay">
+                        <i class="fa-solid fa-bus"></i>
+                        <span>Bus Facilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY HIGHLIGHTS -->
+    <section class="highlights-section" id="highlights">
+        <h2 class="section-title">Key Highlights</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <h3><span class="counter" data-target="2024">2023</span></h3>
+                <p>Established Year</p>
+            </div>
+            <div class="highlight-card">
+                <h3><span class="counter" data-target="800">800</span>+</h3>
+                <p>Student Strength</p>
+            </div>
+            <div class="highlight-card">
+                <h3><span class="counter" data-target="4">4</span>+</h3>
+                <p>Academic Programmes</p>
+            </div>
+            <div class="highlight-card">
+                <h3><span class="counter" data-target="15">15</span>+</h3>
+                <p>Industry Interactions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS MEDIA -->
+    <section class="campus-media" id="campus">
+        <h2 class="section-title">Visit VIMTECH Campus</h2>
+        <div class="media-grid">
+            <div class="media-box">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d840.3510374748253!2d77.117934!3d13.3476208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb02d00010cb943%3A0xaa9cfb8772d4c733!2sVAISIRI%20CAMPUS!5e1!3m2!1sen!2sin!4v1770088366838!5m2!1sen!2sin"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+                <a href="https://maps.app.goo.gl/TV32BHqBAaDpNZjh6" target="_blank" class="media-btn">
+                    Get Directions
+                </a>
+            </div>
+            <div class="media-box">
+                <h3>Campus Tour</h3>
+                <iframe
+                    src="https://www.youtube.com/embed/K0BSu4UsSw4"
+                    title="VIMTECH Campus Tour"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+                <div class="media-cta">
+                    <a href="#contact" class="media-btn primary">Schedule Campus Visit</a>
+                    <a href="#contact" class="media-btn secondary">Contact Admissions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="testimonials-title">What Our Students Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "VIMTECH provided strong academic support and industry exposure that
+                    helped me build a confident career foundation."
+                </p>
+                <h4>Sumit Singh</h4>
+                <span>BBA – Management</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "The faculty guidance and practical learning environment at VIMTECH
+                    prepared me well for professional challenges."
+                </p>
+                <h4>Suresh S</h4>
+                <span>MBA – Finance</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "Modern infrastructure, supportive mentors, and strong placement
+                    assistance made my journey at VIMTECH truly valuable."
+                </p>
+                <h4>Hemanth KR</h4>
+                <span>BCA – Computer Applications</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Sri Sharadadevi Nagar, Saibaba Temple Road, 2nd Stage, Tumkur – 572103</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 82172 30766</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>vaisirifirstgradecollege@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="bca">BCA</option>
+                            <option value="bca-ai">BCA (AI & ML)</option>
+                            <option value="bba">BBA</option>
+                            <option value="mba">MBA</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About VIMTECH</h3>
+                <p>
+                    VIMTECH College is a premier educational institution committed
+                    to providing quality education with industry exposure,
+                    innovation, and world-class infrastructure.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#infrastructure">Infrastructure</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Facilities</h3>
+                <ul>
+                    <li><a href="#infrastructure">Library</a></li>
+                    <li><a href="#infrastructure">Computer Labs</a></li>
+                    <li><a href="#infrastructure">Smart Classes</a></li>
+                    <li><a href="#infrastructure">Auditorium</a></li>
+                    <li><a href="#infrastructure">Sports Complex</a></li>
+                    <li><a href="#infrastructure">Canteen</a></li>
+                    <li><a href="#infrastructure">Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>
+                    Subscribe to our newsletter to receive updates on
+                    college events and academic activities.
+                </p>
+                <form onsubmit="handleNewsletter(event)" class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VIMTECH College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918217230766" class="social-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com" class="social-btn insta" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <div id="scrollTopBtn" class="social-btn scroll" onclick="scrollToTop()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

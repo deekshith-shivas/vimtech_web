@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About VIMTECH | Vision, Leadership & Governance</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ================= ROOT ================= */
+:root{
+  --primary:#5b21b6;
+  --secondary:#1e3a8a;
+  --accent:#f59e0b;
+  --dark:#0f172a;
+  --muted:#475569;
+  --bg:#f8fafc;
+  --white:#ffffff;
+  --radius:18px;
+  --shadow:0 20px 45px rgba(15,23,42,.12);
+  --transition:all .35s ease;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Segoe UI",system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.75;
+}
+
+/* ================= NAVBAR ================= */
+.about-nav{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:linear-gradient(90deg,#0b1d3a,#1e3a8a);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.about-nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  flex-wrap:wrap;
+}
+.about-nav a{
+  color:#fff;
+  padding:16px 20px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+.about-nav a:hover{
+  color:var(--accent);
+  transform:translateY(-2px);
+}
+
+/* ================= SECTION BASE ================= */
+.section{
+  padding:90px 6%;
+}
+.section-title{
+  text-align:center;
+  font-size:36px;
+  font-weight:900;
+  color:var(--secondary);
+  margin-bottom:60px;
+}
+.section-title span{
+  color:var(--accent);
+}
+
+/* ================= VISION & MISSION ================= */
+.vm-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+.vm-card{
+  background:var(--white);
+  padding:40px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  transition:var(--transition);
+}
+.vm-card:hover{transform:translateY(-10px)}
+.vm-icon{
+  font-size:46px;
+  margin-bottom:14px;
+}
+.vm-card h3{
+  font-size:24px;
+  margin-bottom:12px;
+  color:var(--primary);
+}
+.vm-card ul{padding-left:18px}
+
+/* ================= LEADERSHIP ================= */
+.leader-box{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:60px;
+  align-items:center;
+}
+.leader-box.reverse{grid-template-columns:1.2fr 1fr}
+.leader-img img{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+.leader-content h2{
+  font-size:32px;
+  color:var(--primary);
+  margin-bottom:12px;
+}
+.leader-content blockquote{
+  border-left:4px solid var(--accent);
+  padding-left:16px;
+  font-style:italic;
+  color:#334155;
+  margin-bottom:20px;
+}
+.signature{
+  margin-top:20px;
+  font-weight:700;
+}
+
+/* ================= CARDS GRID ================= */
+.card-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.info-card{
+  background:var(--white);
+  padding:35px 28px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  transition:var(--transition);
+  text-align:center;
+}
+.info-card:hover{transform:translateY(-10px)}
+.info-card i{
+  font-size:36px;
+  color:var(--primary);
+  margin-bottom:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .vm-grid,.leader-box,.leader-box.reverse{grid-template-columns:1fr}
+  .section{padding:70px 5%}
+  .section-title{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="about-nav">
+  <ul>
+    <li><a href="#vision"><i class="fa-solid fa-eye"></i> Vision & Mission</a></li>
+    <li><a href="#founder"><i class="fa-solid fa-user-tie"></i> Founder</a></li>
+    <li><a href="#secretary"><i class="fa-solid fa-user-shield"></i> Secretary</a></li>
+    <li><a href="#welfare"><i class="fa-solid fa-hand-holding-heart"></i> Student Welfare</a></li>
+    <li><a href="#academics"><i class="fa-solid fa-graduation-cap"></i> Academics</a></li>
+    <li><a href="#governance"><i class="fa-solid fa-building-columns"></i> Governance</a></li>
+  </ul>
+</nav>
+
+<!-- ================= VISION & MISSION ================= -->
+<section class="section" id="vision">
+  <h2 class="section-title">Vision & <span>Mission</span></h2>
+  <div class="vm-grid">
+    <div class="vm-card">
+      <div class="vm-icon">🎯</div>
+      <h3>Vision</h3>
+      <p>To nurture young minds into responsible leaders and innovators who can transform challenges into opportunities and contribute meaningfully to society and industry.</p>
+    </div>
+    <div class="vm-card">
+      <div class="vm-icon">🚀</div>
+      <h3>Mission</h3>
+      <ul>
+        <li>Industry-relevant management and technology education</li>
+        <li>Ethics, creativity, entrepreneurship and leadership</li>
+        <li>Strong industry–academia linkages</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="section" id="founder">
+  <h2 class="section-title">Founder’s <span>Message</span></h2>
+  <div class="leader-box">
+    <div class="leader-img">
+      <img src="../images/founder.jpg" alt="Founder">
+    </div>
+    <div class="leader-content">
+      <blockquote>“Education is the foundation upon which innovation, character, and leadership are built.”</blockquote>
+      <p>I extend my warm greetings to the students, faculty members, and well-wishers of Vaisiri Institute of Management and Technology – Vidyavahini Group, Tumkur.</p>
+      <p>We are committed to empowering every learner to realize their true potential.</p>
+      <div class="signature">
+        Sri K. B. Jayanna<br>
+        <span>Founder & President – Vidyavahini Group</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECRETARY ================= -->
+<section class="section" id="secretary">
+  <h2 class="section-title">Secretary’s <span>Message</span></h2>
+  <div class="leader-box reverse">
+    <div class="leader-content">
+      <blockquote>“Education is the manifestation of the perfection already in man.” — Swami Vivekananda</blockquote>
+      <p>We are committed to creating a learning environment where knowledge, innovation and ethical values converge.</p>
+      <p>Our focus remains on academic excellence, leadership and industry readiness.</p>
+      <div class="signature">
+        Sri N. B. Pradeep Kumar<br>
+        <span>Secretary – Vidyavahini Group</span>
+      </div>
+    </div>
+    <div class="leader-img">
+      <img src="../images/secretary.jpg" alt="Secretary">
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUDENT WELFARE ================= -->
+<section class="section" id="welfare">
+  <h2 class="section-title">Student <span>Welfare</span></h2>
+  <div class="card-grid">
+    <div class="info-card"><i class="fa-solid fa-heart"></i><p>Mentorship & Counselling</p></div>
+    <div class="info-card"><i class="fa-solid fa-users"></i><p>Clubs & Co-curricular Activities</p></div>
+    <div class="info-card"><i class="fa-solid fa-shield-heart"></i><p>Anti-Ragging & Safety</p></div>
+  </div>
+</section>
+
+<!-- ================= ACADEMICS ================= -->
+<section class="section" id="academics">
+  <h2 class="section-title">Academic <span>Excellence</span></h2>
+  <div class="card-grid">
+    <div class="info-card"><i class="fa-solid fa-laptop-code"></i><p>Industry-oriented Curriculum</p></div>
+    <div class="info-card"><i class="fa-solid fa-chalkboard-user"></i><p>Experienced Faculty</p></div>
+    <div class="info-card"><i class="fa-solid fa-briefcase"></i><p>Internships & Placements</p></div>
+  </div>
+</section>
+
+<!-- ================= GOVERNANCE ================= -->
+<section class="section" id="governance">
+  <h2 class="section-title">Governing <span>Council</span></h2>
+  <div class="card-grid">
+    <div class="info-card"><i class="fa-solid fa-scale-balanced"></i><p>Transparent Administration</p></div>
+    <div class="info-card"><i class="fa-solid fa-sitemap"></i><p>Strategic Planning</p></div>
+    <div class="info-card"><i class="fa-solid fa-award"></i><p>Quality Assurance</p></div>
+  </div>
+</section>
+
+</body>
+</html>
